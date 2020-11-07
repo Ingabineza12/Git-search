@@ -1,0 +1,22 @@
+<div class="col-md-4" >
+    <br>
+    <img src="{{profile.avatar_url}}" style="height: 300px; width: 300px ;margin-left: 2%"  alt="picture">
+    <br>
+    </div>
+  <br>
+        <h3 class="panel-title" style="text-align: center; font-family:sans-serif"><strong> List of all Repository</strong></h3>
+        <div class="jumbotron">
+        <div class="row">            
+          
+                <br>
+                <br>         
+            <div class="col-md-4" *ngFor="let repo of repos">
+                <p>{{repo.name}}<a href=" {{ repo.html_url}}" target="_blank"
+                        class="btn btn-sm btn-warning pull-right">View on GitHub</a></p>
+                        <br>
+                <p>{{repo.description}}</p>
+            </div>
+        </div>  
+        </div>
+  
+  

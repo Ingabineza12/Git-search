@@ -3,18 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserComponent } from './user/user.component';
-import { RepositoryComponent } from './repository/repository.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { ProfileComponent } from './profile/profile.component';
+import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { GitComponent } from './git/git.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    RepositoryComponent,
     StrikethroughDirective,
-    DateCountPipe
+    DateCountPipe,
+    ProfileComponent,
+    AboutComponent,
+    NavbarComponent,
+    GitComponent
   ],
   imports: [
     BrowserModule,
