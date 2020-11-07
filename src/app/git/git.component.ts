@@ -15,13 +15,9 @@ export class GitComponent implements OnInit {
  public username='Ingabineza12';
  public  getProfileInfo:string;
  user:User;
-//  findUser(username){
-//    this. getProfileInfo='';
-//    this.username=username;
-//    this.ngOnInit();
-//  }
 
 
+ 
 
   constructor(public userRequest:ProfileService,public repoRequest:ProfileService) { }
 

@@ -1,28 +1,6 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" routerLink="/git"><b>GitHub</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav" class="navbar-nav" style="margin-left:60% ">
-                <a class="nav-item nav-link active" routerLink="git" routerLinkActive='active'>Home<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" routerLink="/about" routerLinkActive='active'>About</a>
-       
-
-                        <input type="text" style="width:30% ;margin-left: 2%" class="form-control" placeholder="Enter Username" [(ngModel)]="username" name="username"
-                            (keyup)="findProfile()">
-                        <button class="" style="margin-left: 2%"  > Search</button>
-                </div>
-        </div>
-</nav> -->
-
 <div class="container">
-    
-
-
-    <div *ngIf="profile">
+  <div *ngIf="profile">
       
-    
         <div class="panel-body">
             <div class="panel-body">
                 <div class="row">
@@ -31,10 +9,10 @@
                         <img src="{{profile.avatar_url}}" style="height: 300px; width: 300px ;margin-left: 2%"  alt="picture">
                         <br>
                         <br>
-                        <p>
-                                <span class="btn btn-success btn-sm"> Repository {{profile.public_repos}}</span>
-                                <span class="btn btn-primary btn-sm"> Followers {{profile.followers}}</span>
-                                <span class="btn btn-danger btn-sm"> Following {{profile.following}}</span>
+                        <p id="button">
+                                <span class="btn btn-outline-success btn-sm"> Repository {{profile.public_repos}}</span>
+                                <span class="btn btn-outline-primary btn-sm"> Followers {{profile.followers}}</span>
+                                <span class="btn btn-outline-primary btn-sm"> Following {{profile.following}}</span>
                                 
                             </p>
                     </div>
@@ -44,10 +22,8 @@
                             <li class="list-group-item" *ngIf="profile.name"><strong>Name: {{profile.name}}</strong></li>
                             <li class="list-group-item" *ngIf="profile.blog"><strong>Bio: {{profile.bio}}</strong></li>
                             <li class="list-group-item" *ngIf="profile.location"><strong>Location: {{profile.location}}</strong></li>
-                            <li class="list-group-item" *ngIf="profile.hireable"><strong>Hireable: {{profile.hireable}}</strong></li>
                             <li class="list-group-item" *ngIf="profile.created_at"><strong>Created on : {{profile.created_at|date |uppercase}}</strong></li>
-                            <!-- <li class="list-group-item" *ngIf="profile.created_at"><strong> {{profile.created_at|dateCount}}days ago</strong></li> -->
-                         <a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm"> View Profile on GitHub</a>
+                         <a href="{{profile.html_url}}" target="_blank" class="btn btn-outline-success btn-sm"> View Profile on GitHub</a>
                     </ul>
                     </div>
                     <div class="col-md-4">
