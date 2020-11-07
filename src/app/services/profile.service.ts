@@ -17,7 +17,7 @@ export class ProfileService {
 
   constructor(private http:HttpClient) {
     console.log("service is ready");
-    this.username='ingabineza12';
+    this.username='Ingabineza12';
     this.access_token='00e2fad4d61e393feb0a6af961392181b7c2713b';
 
    }
