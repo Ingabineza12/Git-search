@@ -4,6 +4,17 @@
         <div class="panel-body">
             <div class="panel-body">
                 <div class="row">
+                    <div class="col-md-4">
+                        <br>
+                            <form>
+                                    <div>
+                                            <input type="text" style="width:60% ;margin-left: 2%" class="form-control" placeholder="Enter Username" [(ngModel)]="username" name="username"
+                                            (keyup)="findProfile()">
+                                        
+                                
+                                    </div>
+                                </form>
+                    </div>
                     <div class="col-md-4" >
                         <br>
                         <img src="{{profile.avatar_url}}" style="height: 300px; width: 300px ;margin-left: 2%"  alt="picture">
@@ -25,17 +36,6 @@
                             <li class="list-group-item" *ngIf="profile.created_at"><strong>Created on : {{profile.created_at|date |uppercase}}</strong></li>
                          <a href="{{profile.html_url}}" target="_blank" class="btn btn-outline-success btn-sm"> View Profile on GitHub</a>
                     </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <br>
-                            <form>
-                                    <div>
-                                            <input type="text" style="width:60% ;margin-left: 2%" class="form-control" placeholder="Enter Username" [(ngModel)]="username" name="username"
-                                            (keyup)="findProfile()">
-                                        
-                                
-                                    </div>
-                                </form>
                     </div>
                     
             </div>
