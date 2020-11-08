@@ -42,7 +42,7 @@
         </div>
         <br>
         <br>
-            <h3 class="panel-title" style="text-align: center; font-family:sans-serif"><strong> List of all Repository</strong></h3>
+            <h3 class="panel-title" style="text-align: center; font-family:sans-serif"><strong> List of all Repositories</strong></h3>
             <div class="jumbotron">
             <div class="row">            
               
@@ -50,7 +50,7 @@
                     <br>         
                 <div class="col-md-4" *ngFor="let repo of repos">
                     <p>{{repo.name}}<a href=" {{profile.html_url}}" target="_blank"
-                            class="btn btn-sm btn-warning pull-right">View on GitHub</a></p>
+                            class="btn btn-sm btn-success pull-right">View on GitHub</a></p>
                             <br>
                     <p>{{repo.description}}</p>
                 </div>
