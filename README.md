@@ -1,4 +1,12 @@
-# GitSearch
+# Author
+
+Deborah Mugiraneza Ingabire
+
+### Description
+
+This app can help every one to search and view all repository of any user of a github app. I have created this app to help all users to know the information about any user on github. 
+
+### GitSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
