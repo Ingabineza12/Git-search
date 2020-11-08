@@ -47,6 +47,9 @@ Install Angular in the terminal<br>
 Install Boostrap<br>
 Run the server using (ng serve --port) so that it provide a port in case http://localhost:4200/ is taken<br>
 
+## live link
+ingabineza12.github.io/git-search/
+
 ## licence
 
 MIT License
