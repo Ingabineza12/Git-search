@@ -33,3 +33,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Technologies used
+Javascript
+Angular as Framework
+Html
+Css
+Jquery
+
+## set up instruction
+Open terminal
+Install Angular in the terminal
+Install Boostrap
+Run the server using (ng serve --port) so that it provide a port in case http://localhost:4200/ is taken
