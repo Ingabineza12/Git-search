@@ -20,7 +20,7 @@
                         <img src="{{profile.avatar_url}}" style="height: 300px; width: 300px ;margin-left: 2%"  alt="picture">
                         <br>
                         <br>
-                        <p id="button">
+                        <p>
                                 <span class="btn btn-outline-success btn-sm"> Repository {{profile.public_repos}}</span>
                                 <span class="btn btn-outline-primary btn-sm"> Followers {{profile.followers}}</span>
                                 <span class="btn btn-outline-primary btn-sm"> Following {{profile.following}}</span>
@@ -35,7 +35,7 @@
                             <li class="list-group-item" *ngIf="profile.location"><strong>Location: {{profile.location}}</strong></li>
                             <li class="list-group-item" *ngIf="profile.created_at"><strong>Created on : {{profile.created_at|date |uppercase}}</strong></li>
                          <a href="{{profile.html_url}}" target="_blank" class="btn btn-outline-success btn-sm"> View Profile on GitHub</a>
-                    </ul>
+                        </ul>
                     </div>
                     
             </div>
